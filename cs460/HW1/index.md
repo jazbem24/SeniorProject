@@ -106,6 +106,6 @@ Afte I was done creating the website, I created a GitHub Page fro this repositor
 
 [Portfolio Main Page](https://jazbem24.github.io/seniorproject/)
 
-[Link to Website Created](https://jazbem24.github.io/seniorproject/cs460/HW1/HW1.html)
+[Link to Website Created](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW1/HW1.html)
  
-[Full Code for HW1 Found Here](https://github.com/jazbem24/seniorproject/tree/master/cs460/HW1)
+[Full Code for HW1 Found Here](https://github.com/jazbem24/SeniorProject/tree/master/cs460/HW1)
