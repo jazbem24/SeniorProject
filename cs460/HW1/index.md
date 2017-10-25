@@ -104,8 +104,8 @@ p, p2, p3, ol,p4,p5{
 Afte I was done creating the website, I created a GitHub Page fro this repository to be seen as a Porfolio. I chose a Jekyll theme and added markdown files to my main repo folder and HW1. When I was finished with that, GitHub Pages did some magic and turned my files into a live Portfolio on the web. 
 
 
-[Portfolio Main Page](https://jazbem24.github.io/bembryj/)
+[Portfolio Main Page](https://jazbem24.github.io/seniorproject/)
 
-[Link to Website Created](https://jazbem24.github.io/bembryj/HW1/HW1.html)
+[Link to Website Created](https://jazbem24.github.io/seniorproject/cs460/HW1/HW1.html)
  
-[Full Code for HW1 Found Here](https://github.com/jazbem24/bembryj/tree/master/HW1)
+[Full Code for HW1 Found Here](https://github.com/jazbem24/seniorproject/tree/master/cs460/HW1)
