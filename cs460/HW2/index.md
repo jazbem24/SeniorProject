@@ -25,13 +25,13 @@ Now that I have place to start, I added the files and pushed the branch to the r
 ```
  git add . 
  git commit -m "Added hw2 files" 
- git push origin feature_branch
+ git push origin hw_2
  ```
 # Step 2: Creating a Wireframe
 
 Now that I have a good starting point, I need to create a wireframe to use as a layout for the website. I creatd this wireframe using MockFlow. MockFlow is an online wireframe,prototyping,and UI mockup tool. 
 
-![Wireframe](https://github.com/jazbem24/bembryj/blob/feature_branch/HW2/ref/wireframe.png)
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW2/ref/wireframe.png)
 
 # Step 3: Create the Webpage
 
