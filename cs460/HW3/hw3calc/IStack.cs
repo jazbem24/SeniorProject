@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Net;
 
-
 namespace hw3calc
 /// <summary>
 /// Linked stack Interface to be able to implement one for the postfix calculator 
@@ -13,7 +12,7 @@ namespace hw3calc
 /// </summary>
 {
 
-    public interface ILinkedStack<T>
+    public interface IStackADT<T>
     {
         /// <summary>
         /// methods to allow one to push onto the stack, 
