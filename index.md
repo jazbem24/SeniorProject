@@ -9,10 +9,10 @@ I am a senior in the Computer Science Program at Western Oregon University. Duri
 # Code Repository 
 
 All code can be seen here in a separate repository:
-[Senior Project Repository](https://github.com/jazbem24/bembryj/ "Senior Project Repository")
+[Senior Project Repository](https://github.com/jazbem24/SeniorProject/ "Senior Project Repository")
 
 # Software Engineering I (CS 460): Homework 
-1. [Homework 1](https://jazbem24.github.io/bembryj/HW1/) : HTML,CSS,Git,Bootstrap
+1. [Homework 1](https://jazbem24.github.io/SeniorProject/cs460/HW1/) : HTML,CSS,Git,Bootstrap
 2. Homework 2: Add in some Javascript and jQuery, use branching in Git
 3. Homework 3: Learn C# by translating a Java application into a C# console app
 
