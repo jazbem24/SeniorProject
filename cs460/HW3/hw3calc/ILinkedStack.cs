@@ -32,3 +32,4 @@ namespace hw3calc
         void clear();///empty the stack 
 
     }
+}
