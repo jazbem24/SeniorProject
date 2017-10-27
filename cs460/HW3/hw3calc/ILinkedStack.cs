@@ -5,8 +5,6 @@ using System.Text;
 using System.Net;
 
 
-
-
 namespace hw3calc
 /// <summary>
 /// Linked stack Interface to be able to implement one for the postfix calculator 
