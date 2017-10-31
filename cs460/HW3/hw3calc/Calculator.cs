@@ -52,12 +52,13 @@ namespace hw3calc
             }
             catch (ArgumentException)
             {
-                Console.WriteLine("not enought input to start operations");
+                Console.WriteLine("Input Error: " + input + " is not an allowed number or operator");
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+            Console.WriteLine("\n\t >>> " + input + " = " + output);
             return true;
         }
 
