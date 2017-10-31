@@ -7,12 +7,11 @@ using System.Net;
 namespace hw3calc
 /// <summary>
 /// Linked stack Interface to be able to implement one for the postfix calculator 
-/// <typeparam name="T"> is used for the type (generic)
 /// used chapter 13 on creating interfaces in C# 3.0 as a resource 
 /// </summary>
 {
 
-    public interface IStackADT<T>
+    public interface IStackADT
     {
         /// <summary>
         /// methods to allow one to push onto the stack, 
@@ -22,11 +21,11 @@ namespace hw3calc
         /// and clear the stack
         /// </summary>
 
-        T push(T item); /// method to push item onto the top of the stack
-        T pop(T item); ///method to remove and return the item on the top of the stack
-        T peek();///method to return the top item but does not remove
-        bool isEmpty(); ///method to see if the stack is empty or not
-        void clear();///empty the stack 
+        object Push(object var1); /// method to push item onto the top of the stack
+        object Pop(); ///method to remove and return the item on the top of the stack
+        object Peek();///method to return the top item but does not remove
+        bool IsEmpty(); ///method to see if the stack is empty or not
+        void Clear();///empty the stack 
 
     }
 }

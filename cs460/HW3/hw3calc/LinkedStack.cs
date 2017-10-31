@@ -10,53 +10,53 @@ namespace hw3calc
     /// implmentation of a singly-linked stack
     /// </summary>
 
-    public class LinkedStack<T> : IStackADT<T>
+    public class LinkedStack : IStackADT
     {
-        private Node<T> top;
+        private Node top;
 
         public LinkedStack()
         {
             top = null; //constructing an empty linked stack 
         }
 
-        public void clear()
+        public void Clear()
         {
             this.top = null; //clears the stack, assigns null to the top element 
         }
 
-        public bool isEmpty()
+        public bool IsEmpty()
         {
             return top == null; //returns top is equal to null (i.e. is empty)
         }
 
-        public T peek()
+        public object Peek()
         {
-            if (isEmpty())
+            if (IsEmpty())
             {
                 throw new Exception("the stack is empty");
             }
             return top.data; //return data of the top element (peekin') 
         }
 
-        public T pop(T item)
+        public object Pop()
         {
-            if (isEmpty())
+            if (IsEmpty())
             {
                 throw new Exception("there's nothing here");
             }
-            T topItem = top.data; //sets new variable to the top item's data
+            object topItem = top.data; //sets new variable to the top item's data
             top = top.next; //sets top to the next item in list
             return topItem; // returns the top item 
         }
 
 
-        public T push(T item)
+        public object Push(object item)
         {
             if (item == null)
             {
                 throw new Exception("this element is empty");
             }
-            Node<T> newItem = new Node<T>(item, top); //creates new node with data from the item and reference to next node 
+            Node newItem = new Node(item, top); //creates new node with data from the item and reference to next node 
             top = newItem; // top of the stack in now the newest item
 
             return item; //returns reference to the item removed 

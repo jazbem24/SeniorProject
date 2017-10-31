@@ -11,15 +11,15 @@ namespace hw3calc
 /// </summary>
 
 {
-    public class Node<T>
+    public class Node
     {
-        public T data; //payload
-        public Node<T> next; //reference to next Node in chain
+        public object data; //payload
+        public Node next; //reference to next Node in chain
 
         /// <summary>
         /// Gets or sets the data for the payload (cannot set it to null like in Java before Generics) 
         /// </summary>
-        public T Data
+        public object Data
         {
             set { data = value; }
             get { return data; }
@@ -28,13 +28,13 @@ namespace hw3calc
         /// <summary>
         /// Gets or sets the data for the next Node (cannot set it to null like in Java before Generics)
         /// </summary>
-        public Node<T> Next
+        public Node Next
         {
             set { next = value; }
             get { return next; }
         }
 
-        public Node(T data, Node<T> next)
+        public Node(object data, Node next)
         {
             this.data = data;
             this.next = next;
