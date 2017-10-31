@@ -98,7 +98,7 @@ namespace hw3calc
                     //must be an operator or some other character or word 
                     s = element;
                     if (s.Length > 1)
-                        throw new ArgumentNullException("Input Error: " + s + " is not an allowed number or operator. Or didn't place space between operands ");
+                        throw new ArgumentException("Input Error: " + s + " is not an allowed number or operator. Or didn't place space between operands ");
 
                     if (calcStack.IsEmpty())
                     {
