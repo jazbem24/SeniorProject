@@ -1,1 +1,19 @@
-﻿<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
+﻿<!-- Razor to set up title page -->
+@{
+    ViewBag.Title = "HomePage";
+}
+<div class="header">
+    <h1>Home Page (HW 4)</h1>
+</div>
+
+
+<!--@Html.ActionLink("linktext", "someaction", "somecontroller") html action link concept
+list of razor html action links to 3 different pages -->
+
+<div class="pageList">
+<ul>
+    <li class="pageListItem">@Html.ActionLink("USD to CAD", "Page1", "Home")</li>
+    <li class="pageListItem">@Html.ActionLink("User Info", "Page2", "Home")</li>
+    <li class="pageListItem">@Html.ActionLink("Loan Calculator", "Page3", "Home")</li>
+</ul>
+</div>

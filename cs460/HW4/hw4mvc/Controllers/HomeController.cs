@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -9,15 +10,34 @@ namespace hw4mvc.Controllers
 {
     public class HomeController : Controller
     {
+
+        // Controller Action Methods
+        // GET ~/Home/Index
+        // GET ~/Home
+        // GET ~/
         public ActionResult Index()
         {
-            var mvcName = typeof(Controller).Assembly.GetName();
-            var isMono = Type.GetType("Mono.Runtime") != null;
-
-            ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
-            ViewData["Runtime"] = isMono ? "Mono" : ".NET";
-
+            Debug.WriteLine("In Home Index()");
             return View();
         }
+
+        // GET ~/Home/Page1
+        public ActionResult Page1()
+        {
+            return View();
+        }
+
+        // GET ~/Home/Page2
+        public ActionResult Page2()
+        {
+            return View();
+        }
+
+        // GET ~/Home/Page3
+        public ActionResult Page3()
+        {
+            return View();
+        }
+
     }
 }
