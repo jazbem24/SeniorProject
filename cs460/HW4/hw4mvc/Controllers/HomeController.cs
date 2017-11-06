@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
 using System.Web.Services.Description;
+using System.Text.RegularExpressions;
 
 namespace hw4mvc.Controllers
 {
@@ -55,6 +57,7 @@ namespace hw4mvc.Controllers
         [HttpGet]
         public ActionResult Page2()
         {
+            ViewBag.RequestMethod = "GET";
             return View();
         }
 
@@ -130,10 +133,39 @@ namespace hw4mvc.Controllers
         [HttpGet]
         public ActionResult Page3()
         {
+            ViewBag.RequestMethod = "GET";
             return View();
         }
-    }
 
+        /// <summary>
+        /// Process a POSTed form. Returns
+        /// the answer in the ViewBag.
+        /// </summary>
+        /// (? after paramenter type means nullable)
+        /// <param name="amount">loan amount </param>
+        /// <param name="interestRate">the interest on the loan</param>
+        /// <param name="numOfYears">number of years </param>
+        /// <returns>loan payment monthly amount in a View</returns>
+        [HttpPost]
+        public ActionResult Page3(double? amount, double? interestRate, double? numOfYears)
+        {
+
+
+            // rate of interest and number of payments for monthly payments
+            var rateOfInterest = interestRate / 1200;
+            var numberOfPayments = numOfYears * 12;
+
+            // loan amount = (interest rate * loan amount) / (1 - (1 + interest rate)^(number of payments * -1))
+            var paymentAmount = ((rateOfInterest * amount) / (1 - Math.Pow(((double)(1 + rateOfInterest)), ((double)(numberOfPayments * -1)))));
+
+            ViewBag.Answer = Math.Round((decimal)paymentAmount, 2);
+
+            return View();
+
+        }
+    }
 }
+
+
 
 
