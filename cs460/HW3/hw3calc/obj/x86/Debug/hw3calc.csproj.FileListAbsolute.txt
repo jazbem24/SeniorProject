@@ -1,0 +1,5 @@
+/Users/Jazmin/Desktop/seniorproject/cs460/HW3/hw3calc/bin/Debug/hw3calc.exe
+/Users/Jazmin/Desktop/seniorproject/cs460/HW3/hw3calc/bin/Debug/hw3calc.pdb
+/Users/Jazmin/Desktop/seniorproject/cs460/HW3/hw3calc/obj/x86/Debug/hw3calc.csproj.CoreCompileInputs.cache
+/Users/Jazmin/Desktop/seniorproject/cs460/HW3/hw3calc/obj/x86/Debug/hw3calc.exe
+/Users/Jazmin/Desktop/seniorproject/cs460/HW3/hw3calc/obj/x86/Debug/hw3calc.pdb

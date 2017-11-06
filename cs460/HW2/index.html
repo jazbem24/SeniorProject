@@ -7,18 +7,34 @@
         <title>Homework 2</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
+       <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <h1 align="center">Blood Alcohol Content Calculator</h1>
+       
+        <div class="words">
         <p1> 
             If you might have had a few drinks today and you'd like to know exactly how lit you might be, you've come to the right place. In the forms below, enter in your gender, weight, and how many drinks you had. After you've entered that in, press enter and your BAC level will show up on your screen. 
-        </p1>
+            
+                        BAC Formula Widmark
 
+                (% BAC = (A x 5.14 / W x r) – .015 x H )
+
+                    The Variables in Widmark’s Formula:
+
+                    A = liquid ounces of alcohol consumed, 
+                        W = a person’s weight in pounds, 
+            r = a gender constant of alcohol distribution (.73 for men and .66 for women), 
+                H = hours elapsed since drinking commenced. 
+     </p1>
+             </div>
+
+<br/>
+<br/>
+<br/>
+    <div class="form-body">
         <div class="container">
-            <div class = "form row"> 
+            <div class = "form-row"> 
                 <div class = "col-sm-6">
                     <label for="Ounces of Alchol Consumed:">Ounces Of Alcohol Consumed:
                     </label>
@@ -28,8 +44,109 @@
                 </div>
             </div>
         </div>    
+<br/>
+<br/>
+     <div class="container">
+            <div class = "form-row"> 
+                <div class = "col-sm-6">
+                    <label for="Weight in Pounds:">Weight in Pounds: </label>
+                </div> 
+                <div class="col-sm-6">
+                    <input type="number" id="lbs" placeholder="Weight in lbs."><br>
+                </div>
+            </div>
+        </div>    
+<br/>
+<br/>
+     <div class="container">
+            <div class = "form-row"> 
+                <div class = "col-sm-6">
+                    <label for="Hours since drinking began: ">Hours since drinking began:
+                    </label>
+                </div> 
+                <div class="col-sm-6">
+                    <input type="number" id="hours" placeholder="hours"><br>
+                </div>
+                </div>
+                </div>
 
+<br/>
+<br/>
+ <div class="container">
+            <div class = "form-row"> 
+                <div class = "col-sm-6">
+                    <label for="Gender:">Gender: </label>
+                </div> 
+                <div class="col-sm-6">
+                    <select name="gender" id="gender">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select>
+            </div>
+        </div>     
+      </div> 
+        <br/>
+<br/>
+<br/>
+           <div class="container">
+                <div class = "form-row"> 
+            <div class = "col-sm-6">
+                    <input class="button" id="button" type="button"  value="Calculate">
+                </div> 
+            </div> 
+           </div>
 
+           <div class="container">
+                <div class = "form row"> 
+            <div class = "col-sm-6">
+                    <div id="list"></div>
+                </div> 
+            </div> 
+           </div>
+</div>
 
+        <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    
+
+        <script>
+         //JQuery/javascript fun
+        console.log('got the document');
+        $(document).ready(function() {;
+           $("#button").click(function() {
+               
+               var ounces = document.getElementById("OuncesConsumed").value; 
+               var gender = document.getElementById("gender").value; 
+               var h = document.getElementById("hours").value;
+               var pounds = document.getElementById("lbs").value;
+               
+               var g;
+               var bac; 
+            
+               if(gender = "male"){
+                    g= 0.73;
+                 }
+                 else {
+                 g = 0.66; 
+                 }  
+                var j = ounces * 5.14; 
+                var r = j / pounds * g;
+                bac = Number(r - 0.15 * h).toFixed(2); 
+               $("#list").append(`<ul>
+                    <li>$%{bac}</li>
+                    <li></li>
+                    <li></li>
+                    </ul> `);
+               console.log('it worked');
+           }); 
+        });
+        
+    </script>       
     </body>
 </html>
