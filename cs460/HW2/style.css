@@ -1,5 +1,30 @@
+.form-body {
+    color: blueviolet;
+    text-align: center;
+    margin:10x 30px; 
+    font-family: verdana;
+    font-weight: bolder;
+    border-color: black;
+    border-style: solid;
+    
+}
 
+.form-row {
+    text-align: center;
+}
 
-p1{
-   
+.words{
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    font-weight: bold; 
+
+}
+
+body{
+    background-color: gray;
+}
+
+h1{
+    color:black;
 }
