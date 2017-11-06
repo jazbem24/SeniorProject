@@ -35,10 +35,77 @@ Now that I have a good starting point, I need to create a wireframe to use as a 
 
 # Step 3: Create the Webpage
 
+After creating the wireframe, I added added jquery and javascript to the file for added logic and grabbing element value from the DOM. 
 
+```
+ console.log('got the document');
+        $(document).ready(function() {;
+           $("#button").click(function() {
+               
+               var ounces = document.getElementById("OuncesConsumed").value; 
+               var gender = document.getElementById("gender").value; 
+               var h = document.getElementById("hours").value;
+               var pounds = document.getElementById("lbs").value;
+               
+               var g;
+               var bac; 
+            
+               if(gender = "male"){
+                    g= 0.73;
+                 }
+                 else {
+                 g = 0.66; 
+                 }  
+                var j = ounces * 5.14; 
+                var r = j / pounds * g;
+                bac = Number(r - 0.15 * h).toFixed(2); 
+               $("#list").append(`<ul>
+                    <li>${bac}%</li>
+                    <li>BAC .02%-.03%-doing just fine</li>
+                    <li>BAC .10%-.12%-definitely should get a taxi home</li>
+                    </ul> `);
+               console.log('it worked');
+           }); 
+        });
+```
 
+Next, added some css for style points. 
+
+```
+.form-body {
+    color: blueviolet;
+    text-align: center;
+    margin:10x 30px; 
+    font-family: verdana;
+    font-weight: bolder;
+    border-color: black;
+    border-style: solid;
+    
+}
+
+.form-row {
+    text-align: center;
+}
+
+.words{
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    font-weight: bold; 
+
+}
+
+```
+
+# Step 4: BAC Calculator in action 
+
+Before... 
+
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW2/ref/wireframe.png)
+
+After...
 
  
- 
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/hw_2/cs460/HW2/ref/hw2after.png)
  
  
