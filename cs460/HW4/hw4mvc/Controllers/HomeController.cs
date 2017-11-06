@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
+using System.Web.Services.Description;
 
 namespace hw4mvc.Controllers
 {
@@ -21,16 +22,42 @@ namespace hw4mvc.Controllers
             return View();
         }
 
-        // GET ~/Home/Page1
+        // GET ~/Home/page1
+        [HttpGet]
         public ActionResult Page1()
         {
+
+            string output = "You Now Have:";
+            string money = Request.QueryString["money"];
+            string conversionTo = Request.QueryString["conversionTo"];
+            ViewBag.RequestMethod = "GET";
+            double answer;
+
+            //the conversion to USD
+            if (conversionTo == "USD" || conversionTo == "usd")
+            {
+                answer = (double.Parse(money) * 1.28);
+                output = "" + answer;
+            }
+
+            //the conversion to CAD
+            else if (conversionTo == "CAD" || conversionTo == "cad")
+            {
+                answer = (double.Parse(money) / 1.28);
+                output = "" + answer;
+            }
+
+            ViewBag.Message = output;
             return View();
         }
 
-        // GET ~/Home/Page2
+        // Get for page2
+        [HttpGet]
         public ActionResult Page2()
         {
+            ViewBag.RequestMethod = "GET";
             return View();
+
         }
 
         // GET ~/Home/Page3
