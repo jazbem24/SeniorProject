@@ -1,16 +1,39 @@
 ﻿@{
-    Layout = null;
-}
+    ViewBag.Title = "Page2";
+ }
 
-<!DOCTYPE html>
+        <p1> 
+         As a person that spent a substantial amount of time growing up in Oakland, California,
+         Bay Area slang is close to my heart and still very much a part of my vocabulary. 
+         Use the 2 drop down box below to see the Bay Area Slang version of every day phrases to mix and match and
+         form everyday sentences. 
+     </p1>
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <div>
-    
-    </div>
-</body>
-</html>
+
+<!--Form to grab info for Bay Area slang converter , calls Page2-->
+<form method="post" action="Page2">
+    <select name="firstDrop">
+  <option value="ofCourse">Of Course</option>
+  <option value="pickup"> To pick someone up</option>
+  <option value="dyu">Do you understand?</option>
+  <option value="very">Very</option>
+  <option value="tryingTo">Trying to</option>
+  <option value="yes">yes</option>
+    </select>
+    <br>
+    <br>
+    <br>
+   <select name="secondDrop">
+  <option value="friend">Friend</option>
+  <option value="cars">Cars</option>
+  <option value="cool">Cool</option>
+  <option value="leave">Leave</option>
+  <option value="crazy">Crazy</option>
+  <option value="wrong">Wrong/Strange</option>
+    </select>
+  <input type="submit" value="Submit" name="submit">
+</form>
+
+<!--Gets answer from viewbag.-->
+<p>
+    Bay Area Slang : @ViewBag.Message
