@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{7DD74C64-EDD5-436F-9472-54D88537A835}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Page3.cshtml">
+    <Files>
+      <File FileName="Views/Home/Page3.cshtml" Line="21" Column="8" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.hw4mvc PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
