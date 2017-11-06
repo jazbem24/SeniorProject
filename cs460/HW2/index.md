@@ -101,7 +101,7 @@ Next, added some css for style points.
 
 Before... 
 
-![Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW2/ref/hw2before.png)
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/hw_2/cs460/HW2/ref/hw2before.png)
 
 After...
 
