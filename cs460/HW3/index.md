@@ -12,7 +12,7 @@ javac calculator.java
 java calculator 
 ```
 
-![Wireframe]()
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/hw_3/cs460/HW3/ref/c%23calc.png)
 
 # Step 2 - IStackADT interface
 
@@ -82,4 +82,4 @@ string[] inputArray = input.Split(' ');
 
 # Step 6 - Now to see it at work 
 
-![Wireframe]()
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/hw_3/cs460/HW3/ref/javapostfix.png)
