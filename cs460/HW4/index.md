@@ -28,7 +28,7 @@ git checkout hw_4_page3
 </div>
 ```
 
-[!Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/home.png)
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/home.png)
 
 # Step 3 - Create page 1 with a View and ActionResult() method in the HomeController 
 
@@ -58,9 +58,9 @@ For page 1, I created a USD to CAD converter. I used a ViewBag to get the data f
             ViewBag.Message = output;
             return View();
 ```
-[!Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/page1start.png)
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/page1start.png)
 
-[!Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/page1working.png)
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/page1working.png)
     
 # Step 4 = Create page 2 with a View and ActionResult() method in the HomeController using a FormCollection and HTTP Post method 
  
@@ -100,8 +100,8 @@ ViewBag.RequestMethod = "POST";
 ```
 
 
-[!Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/page2start.png)
-[!Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/page2working.png)
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/page2start.png)
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/page2working.png)
 
 # Step 5 - Lastly, I created a Loan Calculator to emulate model minding. I got to use the '?' in C# with the parameters that I brought in from the View. The '?' makes the parameters nullable. After I finshed with the Controller and the Views, I pushed each feature to the remote repo and merges them into master from the command line. 
 
@@ -125,5 +125,5 @@ public ActionResult Page3(double? amount, double? interestRate, double? numOfYea
     }
 ```
 
-[!Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/page3start.png)
-[!Wireframe](https://github.com/jazbem24/SeniorProject/tree/master/cs460/HW4/ref)
+![Wireframe](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW4/ref/page3start.png)
+![Wireframe](https://github.com/jazbem24/SeniorProject/tree/master/cs460/HW4/ref)
