@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "AddForm";
+}
+<h1>Add Form</h1>
+
+@using (Html.BeginForm())
+{
+    <h4>Address</h4>
+    <div class="form-group">
+        @Html.LabelFor(model => model.fullName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.fullName, new { htmlAttributes = new { required = "required", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.fullName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.dob, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.dob, new { htmlAttributes = new { required = "required", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.dob, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.customerNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.customerNumber, new { htmlAttributes = new { required = "required", @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.customerNumber, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.str, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.str, new { required = "required", htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.str, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.city, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.city, new { required = "required", htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.city, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.state, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.st, new { required = "required", htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.state, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.zip, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.zip, new { required = "required", htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.zip, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.currentDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.currentDate, new { required = "required", htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.currentDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
