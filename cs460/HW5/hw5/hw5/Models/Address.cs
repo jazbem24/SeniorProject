@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace hw5.Models
 {
     public class Address
     {
-        {
+        
         [Display(Name = "ID")]
         public int id { get; set; }
-
+    
         [Display(Name = "DOB")]
-        public DateTime dob { get; set; }
+        public DateTime Dob { get; set; }
 
         [Display(Name = "Customer Number")]
         public int customerNumber { get; set; }
@@ -33,7 +34,6 @@ namespace hw5.Models
         public string street { get; set; }
 
         [Display(Name = "Current Date")]
-        public DateTime currentDate { get; set; }
+        public DateTime CurrentDate { get; set; }
     }
-}
 }

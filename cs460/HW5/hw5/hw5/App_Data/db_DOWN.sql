@@ -1,1 +1,1 @@
-﻿Drop Table Addresses;
+﻿DROP TABLE addresses;

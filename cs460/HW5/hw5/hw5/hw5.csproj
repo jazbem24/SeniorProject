@@ -157,12 +157,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\db_DOWN.sql" />
+    <Content Include="App_Data\db_UP.sql" />
     <Content Include="App_Data\AddressDB.mdf" />
     <Content Include="App_Data\AddressDB_log.ldf">
       <DependentUpon>AddressDB.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Data\db_DOWN.sql" />
-    <Content Include="App_Data\db_UP.sql" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
