@@ -1,5 +1,72 @@
-﻿@{
+﻿@model IEnumerable<hw5.Models.Address>
+
+@{ 
     ViewBag.Title = "List";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+
+<h1>List of Addresses</h1>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dob)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.customerNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.street)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.city)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.st)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.zip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.currentDate)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.fullName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.dob)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.customerNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.street)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.city)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.st)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.zip)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.currentDate)
+            </td>
+        </tr>
+    }

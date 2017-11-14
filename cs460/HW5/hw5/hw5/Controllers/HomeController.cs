@@ -3,28 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using hw5.DAL;
+using hw5.Models;
 
 namespace hw5.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        private AddressContext db = new AddressContext(); 
+        
+        //GET: Home/Index
+            public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        //GET: Add Address Form
+        public ActionResult AddForm()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
-            return View();
+        [HttpPost]
+        public ActionResult AddForm([Bind(Include = "customerNumber,dob, fullName,city,street,zip,st")] Address address)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Addresses.Add(address);
+                db.SaveChanges();
+                return RedirectToAction("List");
+            }
+            return View(address);
+        }
+        //Get List of Addresses
+        public ActionResult List()
+        {
+            return View(db.Addresses.ToList());
         }
     }
 }
