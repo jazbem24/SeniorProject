@@ -26,7 +26,7 @@ namespace hw5.Controllers
 
 
         [HttpPost]
-        public ActionResult AddForm([Bind(Include = "customerNumber,dob, fullName,city,street,zip,st")] Address address)
+        public ActionResult AddForm([Bind(Include = "customerNumber,dob, fullName,city,street,zip,st, currentDate")] Address address)
         {
             if (ModelState.IsValid)
             {
