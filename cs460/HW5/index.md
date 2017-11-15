@@ -100,10 +100,10 @@ snippet from AddForm View...
 
 # Now here's some screenshots exhibiting it in action... 
 
-[! Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/ref/HomePage.png)
+![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/ref/HomePage.png)
 
-[! Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/ref/ListOfAddressesPre.png)
+![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/ref/ListOfAddressesPre.png)
 
-[! Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/ref/NewAddress.png)
+![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/ref/NewAddress.png)
 
-[! Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/ref/AddressAdded.png)
+![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/ref/AddressAdded.png)
