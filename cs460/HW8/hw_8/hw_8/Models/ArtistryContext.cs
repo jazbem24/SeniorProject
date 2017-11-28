@@ -5,9 +5,10 @@ using System.Web;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace hw_8.Models
 {
-    public class ArtistryContext: DbContext
+    public partial class ArtistryContext: DbContext
     {
        public ArtistryContext()
             :base("name=ArtistryContext")
