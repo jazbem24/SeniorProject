@@ -1,16 +1,17 @@
-﻿--create Artist Table
+﻿--capitalize attribute names 
+--create Artist Table
 CREATE TABLE dbo.Artists(
-id int IDENTITY(1,1) NOT NULL,
-artistName varchar(128) NOT NULL,
-birthDate DateTime NOT NULL,
-birthPlace varchar(128) NOT NULL
+ID int IDENTITY(1,1) NOT NULL,
+ArtistName varchar(128) NOT NULL,
+BirthDate DateTime NOT NULL,
+BirthPlace varchar(128) NOT NULL
 CONSTRAINT[PK.dbo.Artists] PRIMARY KEY CLUSTERED(ID ASC)
 );
 
 --create ArtWork table 
 CREATE TABLE dbo.ArtWork(
-id int IDENTITY(1,1) NOT NULL,
-title varchar(86) NOT NULL,
+ID int IDENTITY(1,1) NOT NULL,
+Title varchar(86) NOT NULL,
 ArtistID int NOT NULL, 
 CONSTRAINT[PK.dbo.ArtWork] PRIMARY KEY CLUSTERED(ID ASC),
 CONSTRAINT[FK_dbo.Artwork_dbo.ArtistID] FOREIGN KEY ([ArtistID])REFERENCES [dbo].[Artists]([ID])
@@ -18,14 +19,14 @@ CONSTRAINT[FK_dbo.Artwork_dbo.ArtistID] FOREIGN KEY ([ArtistID])REFERENCES [dbo]
 
 --create Genre Table
 CREATE TABLE dbo.Genre(
-id int IDENTITY(1,1) NOT NULL,
-name varchar (64) NOT NULL
+ID int IDENTITY(1,1) NOT NULL,
+Name varchar (64) NOT NULL
 CONSTRAINT[PK.dbo.Genre] PRIMARY KEY CLUSTERED(ID ASC)
 ); 
 
 --create classifications Table 
 CREATE TABLE dbo.Classifications(
-id int IDENTITY(1,1) NOT NULL,
+ID int IDENTITY(1,1) NOT NULL,
 ArtworkID int NOT NULL,
 GenreID int NOT NULL, 
 CONSTRAINT[PK.dbo.Classifications] PRIMARY KEY CLUSTERED(ID ASC),
@@ -36,7 +37,7 @@ GO
 
 --Now to plant seed data for the database 
 --Artists Table 
-INSERT INTO dbo.Artists(ArtistName,birthDate,birthPlace)
+INSERT INTO dbo.Artists(ArtistName,BirthDate,BirthPlace)
 VALUES
 ('M.C. Escher', '06/17/1898', 'Leeuwarden,Netherlands'),
 ('Leonardo Da Vinci', '05/02/1519', 'Vinci,Italy'),
@@ -44,7 +45,7 @@ VALUES
 ('Salvador Dali', '05/11/1904', 'Figueres,Spain'); 
 
 --ArtWork Table
-INSERT INTO dbo.ArtWork(title, ArtistID)
+INSERT INTO dbo.ArtWork(Title, ArtistID)
 VALUES 
 ('Circle Limit III', 1),
 ('Twon Tree', 1),
@@ -54,7 +55,7 @@ VALUES
 ('Honey Is Sweeter Than Blood', 4); 
 
 --Genre Table 
-INSERT INTO dbo.Genre(name) 
+INSERT INTO dbo.Genre(Name) 
 VALUES
 ('Tesselation'),
 ('Surrealism'),
