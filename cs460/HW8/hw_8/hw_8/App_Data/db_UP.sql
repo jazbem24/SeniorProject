@@ -33,3 +33,42 @@ CONSTRAINT[FK_dbo.Classifications_dbo.ArtWorkID] FOREIGN KEY ([ArtworkID])REFERE
 CONSTRAINT[FK_dbo.GenreID_dbo.GenreID] FOREIGN KEY ([GenreID])REFERENCES [dbo].[Genre]([ID])
 );
 GO
+
+--Now to plant seed data for the database 
+--Artists Table 
+INSERT INTO dbo.Artists(ArtistName,birthDate,birthPlace)
+VALUES
+('M.C. Escher', '06/17/1898', 'Leeuwarden,Netherlands'),
+('Leonardo Da Vinci', '05/02/1519', 'Vinci,Italy'),
+('Hatip Mehmed Efendi', '11/18/1680', 'Unknown'),
+('Salvador Dali', '05/11/1904', 'Figueres,Spain'); 
+
+--ArtWork Table
+INSERT INTO dbo.ArtWork(title, ArtistID)
+VALUES 
+('Circle Limit III', 1),
+('Twon Tree', 1),
+('Mona Lisa', 2),
+('The Vitruvian Man', 2),
+('Ebru', 3),
+('Honey Is Sweeter Than Blood', 4); 
+
+--Genre Table 
+INSERT INTO dbo.Genre(name) 
+VALUES
+('Tesselation'),
+('Surrealism'),
+('Portrait'),
+('Renaissance'); 
+
+--Classifications Table
+INSERT INTO dbo.Classifications(ArtworkID, GenreID) 
+VALUES
+(1,1),
+(2,1),
+(2,2),
+(3,3),
+(3,4),
+(4,4),
+(5,1),
+(6,2);
