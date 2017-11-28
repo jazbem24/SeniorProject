@@ -14,7 +14,17 @@ namespace hw_8.Controllers
     {
         private ArtistryContext db = new ArtistryContext();
 
-        // GET: Home
+        public ActionResult Classifications()
+        {
+            return View(db.Classifications.ToList());
+        }
+        
+        //GET: ArtWorks
+        public ActionResult ArtWorks()
+        {
+            return View(db.Artworks.ToList());
+        }
+        // GET: Artists
         public ActionResult Artists()
         {
             return View(db.Artists.ToList());
