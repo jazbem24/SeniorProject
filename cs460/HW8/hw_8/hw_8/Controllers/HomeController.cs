@@ -50,7 +50,7 @@ namespace hw_8.Controllers
             {
                 db.Artists.Add(artist);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Artists");
             }
 
             return View(artist);
@@ -80,7 +80,7 @@ namespace hw_8.Controllers
             {
                 db.Entry(artist).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Artists");
             }
             return View(artist);
         }
@@ -108,7 +108,7 @@ namespace hw_8.Controllers
             Artist artist = db.Artists.Find(id);
             db.Artists.Remove(artist);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Artists");
         }
     }
 }
