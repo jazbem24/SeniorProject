@@ -1,17 +1,34 @@
-﻿@{
-    Layout = null;
+﻿@model IEnumerable<hw_8.Models.ArtWork>
+@{
+    ViewBag.Title = "Artworks";
 }
 
-<!DOCTYPE html>
+<h1>ArtWorks</h1>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-    
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-striped">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Artist.ArtistName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Artist.ArtistName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                </tr>
+            }
+
+        </table>
     </div>
-</body>
-</html>
+</div>

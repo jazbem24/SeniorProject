@@ -1,17 +1,35 @@
-﻿@{
-    Layout = null;
+﻿@model IEnumerable<hw_8.Models.Classifications>
+
+@{
+    ViewBag.Title = "Classifications";
 }
 
-<!DOCTYPE html>
+<h2>Art Classifications</h2>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-    
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-striped">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ArtWork.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Genre.Name)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ArtWork.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Genre.Name)
+                    </td>
+                </tr>
+            }
+
+        </table>
     </div>
-</body>
-</html>
+</div>
