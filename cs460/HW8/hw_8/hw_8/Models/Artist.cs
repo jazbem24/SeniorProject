@@ -31,8 +31,8 @@ namespace hw_8.Models
 
         [Required]
         [StringLength(50)]
-        [Display(Name = "Birth City")]
-        public string BirthCity { get; set; }
+        [Display(Name = "Birth Place")]
+        public string BirthPlace { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ArtWork> ArtWork {get; set;}

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<hw_8.Models.Genre>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<center><h1>Art by Genre</h1></center>
+
+<center>
+    <div id="genreButtons" class="btn-group">
+        @foreach (var item in Model)
+        {
+            <button type="button" class="genreButton btn btn-primary" id="@item.Name" value="@item.ID">@Html.DisplayName(item.Name)</button>
+        }
+    </div>
+</center>
+<br />
+<br />
+
+<div id="ShowList" align="center" style="display:none">
+        <ul id="genreList">@* *@</ul>
+    </div>
+
+
+@section Scripts
+{
+    <script type="text/javascript" src="~/Scripts/genre.js"></script>
+}

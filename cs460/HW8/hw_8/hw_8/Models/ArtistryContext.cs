@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
+using hw_8.Models;
+
 
 
 namespace hw_8.Models
@@ -17,7 +19,7 @@ namespace hw_8.Models
         
         public virtual DbSet<Artist> Artists { get; set; }
         public virtual DbSet<ArtWork> Artworks { get; set; }
-        public virtual DbSet<Genre>Genres { get; set; }
+        public virtual DbSet<Genre> Genres { get; set; }
         public virtual DbSet<Classifications> Classifications { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

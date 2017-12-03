@@ -14,24 +14,49 @@ namespace hw_8.Controllers
     {
         private ArtistryContext db = new ArtistryContext();
 
+        // GET: Home
+        public ActionResult Index()
+        {
+            List<Genre> genre = db.Genres.ToList();
+            return View(genre);
+        }
+
+
+        public JsonResult GetGenre(int? genre)
+        {
+            if(genre == null)
+            {
+                return null;
+            }
+
+           var artPieces = db.Genres.Where(g => g.ID == genre)
+                        .Select(a => a.Classifications)
+                        .FirstOrDefault()
+                        .Select(a => new { a.ArtWork.Title, a.ArtWork.Artist.ArtistName })
+                        .OrderBy(a => a.Title)
+                        .ToList();
+                       
+            return Json(artPieces, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult Classifications()
         {
             return View(db.Classifications.ToList());
         }
         
-        //GET: ArtWorks
+        [HttpGet]
         public ActionResult ArtWorks()
         {
             return View(db.Artworks.ToList());
         }
-        // GET: Artists
+        [HttpGet]
         public ActionResult Artists()
         {
             return View(db.Artists.ToList());
         }
 
-        // GET: Home/Details/5
-        public ActionResult ArtistsDetails(int? id)
+        [HttpGet]
+        public ActionResult ArtistDetails(int? id)
         {
             if (id == null)
             {
@@ -45,8 +70,8 @@ namespace hw_8.Controllers
             return View(artist);
         }
 
-        // GET: Home/CreateArtists
-        public ActionResult CreateArtists()
+        [HttpGet]
+        public ActionResult CreateArtist()
         {
             return View();
         }
@@ -54,7 +79,7 @@ namespace hw_8.Controllers
         // POST: Home/CreateArtists
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult CreateArtists([Bind(Include = "ID,ArtistName,BirthDate,BirthCity")] Artist artist)
+        public ActionResult CreateArtist([Bind(Include = "ID,ArtistName,BirthDate,BirthPlace")] Artist artist)
         {
             if (ModelState.IsValid)
             {
@@ -66,7 +91,7 @@ namespace hw_8.Controllers
             return View(artist);
         }
 
-        // GET: Home/EditArtist/5
+        [HttpGet]
         public ActionResult EditArtist(int? id)
         {
             if (id == null)
@@ -84,7 +109,7 @@ namespace hw_8.Controllers
         // POST: Home/EditArtist/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult EditArtist([Bind(Include = "ID,ArtistName,BirthDate,BirthCity")] Artist artist)
+        public ActionResult EditArtist([Bind(Include = "ID,ArtistName,BirthDate,BirthPlace")] Artist artist)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +120,7 @@ namespace hw_8.Controllers
             return View(artist);
         }
 
-        // GET: Home/DeleteArtist/5
+        [HttpGet]
         public ActionResult DeleteArtist(int? id)
         {
             if (id == null)

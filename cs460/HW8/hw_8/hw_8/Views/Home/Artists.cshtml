@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<hw_8.Models.Artist>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Artist";
 }
 
-<h2>Index</h2>
+<h2>Artist</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "CreateArtist")
 </p>
 <table class="table">
     <tr>
@@ -18,7 +18,7 @@
             @Html.DisplayNameFor(model => model.BirthDate)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.BirthCity)
+            @Html.DisplayNameFor(model => model.BirthPlace)
         </th>
         <th></th>
     </tr>
@@ -32,12 +32,12 @@
             @Html.DisplayFor(modelItem => item.BirthDate)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.BirthCity)
+            @Html.DisplayFor(modelItem => item.BirthPlace)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            @Html.ActionLink("Edit", "EditArtist", new { id=item.ID }) |
+            @Html.ActionLink("Details", "ArtistDetails", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "DeleteArtist", new { id=item.ID })
         </td>
     </tr>
 }

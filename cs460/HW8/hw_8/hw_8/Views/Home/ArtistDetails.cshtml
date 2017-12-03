@@ -27,16 +27,16 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.BirthCity)
+            @Html.DisplayNameFor(model => model.BirthPlace)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.BirthCity)
+            @Html.DisplayFor(model => model.BirthPlace)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Edit", "EditArtist", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
