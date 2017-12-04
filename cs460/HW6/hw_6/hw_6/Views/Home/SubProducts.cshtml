@@ -1,0 +1,40 @@
+﻿
+@model IEnumerable<hw_6.Models.Product>
+
+@{
+    ViewBag.Title = "SubProducts";
+}
+
+<!-- SubProduct name -->
+<center><h2>@Html.DisplayFor(modelItem => modelItem.FirstOrDefault().ProductSubcategory.Name)</h2></center>
+
+<div class="row">
+    <!-- Display name, product number, and price of each item -->
+    @foreach (var item in Model)
+    {
+        <center>
+            <div class="col-md-4" style="padding-bottom: 2em">
+                <div>
+                    <!-- Product name is the link to that product's details page -->
+                    <strong>@Html.ActionLink(item.Name, "Products", new { id = item.ProductID })</strong>
+                </div>
+                <div>
+                    Product #: @Html.DisplayFor(modelItem => item.ProductNumber)
+                </div>
+                <div>
+                    <strong>$@Html.DisplayFor(modelItem => item.ListPrice)</strong>
+                </div>
+            </div>
+        </center>
+    }
+</div>
+<br />
+<!-- Create page links for the number of pages in this subcategory -->
+<div>
+    <ul class="pagination">
+        @for (int i = 1; i <= ViewBag.NumberofPages; ++i)
+        {
+            <li>@Html.ActionLink(i.ToString(), "Products", new { id = Model.FirstOrDefault().ProductSubcategoryID, page = i })</li>
+        }
+    </ul>
+</div>
