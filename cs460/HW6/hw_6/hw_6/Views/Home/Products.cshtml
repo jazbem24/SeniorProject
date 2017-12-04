@@ -92,9 +92,12 @@
                             <th>
                                 Comments
                             </th>
+                            <th>
+                                Rating
+                            </th>
                         </tr>
                         @foreach (var item in Model.ProductReviews.OrderByDescending(p => p.ReviewDate).ToList())
-                        { <!-- Display the name, date, and comments of each review -->
+                        { <!-- Display the name, date,rating, and comments of each review -->
                             <tr>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.ReviewerName)
@@ -105,6 +108,10 @@
                            
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Comments)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Rating)
                                 </td>
                             </tr>
                         }

@@ -66,8 +66,8 @@ namespace hw_6.Controllers
         /// GET: Product
         /// HttpGet method to retrieve the View for the desired Product
         /// </summary>
-        /// <param name="id">The id of the desired Product</param>
-        /// <returns>The View object for Products/Product/{id}</returns>
+        /// <param name="id">The id of the desired SubProduct</param>
+        /// <returns>The View object for Home/SubProduct/{id}</returns>
         public ActionResult Products(int? id)
         {
             if (id == null) // product id wasn't indicated
@@ -101,7 +101,7 @@ namespace hw_6.Controllers
         /// <param name="id">The id of the Product for which to create a Review</param>
         /// <returns></returns>
         [HttpGet]
-        public ActionResult Review(int? id)
+        public ActionResult Reviews(int? id)
         {
             int pid = id ?? -1;
             if (pid == -1) // id was not indicated
@@ -128,7 +128,7 @@ namespace hw_6.Controllers
         /// <param name="review">The ProductReview to validate and add to database</param>
         /// <returns></returns>
         [HttpPost]
-        public ActionResult Review(ProductReview review)
+        public ActionResult Reviews(ProductReview review)
         {
             // if valid, add to db and redirect back to Product page
             if (ModelState.IsValid)
