@@ -112,7 +112,7 @@ namespace hw_6.Controllers
             if (product == null) // product doesn't exist
                 return HttpNotFound();
 
-            // Create a new ProductReview for this Product, prepopulate dictated info and send to View
+            // Create a new ProductReview for this Product and add needed values
             ProductReview review = db.ProductReviews.Create();
             review.ProductID = pid;
             review.Product = product;
@@ -137,7 +137,7 @@ namespace hw_6.Controllers
                 db.SaveChanges();
                 return RedirectToAction("SubProducts", new { id = review.ProductID });
             }
-            // return prepopulated model back to user if not valid
+            // If not valid, returns the already filled out reviews based on ProductID
             review.Product = db.Products.Find(review.ProductID);
             return View(review);
         }
