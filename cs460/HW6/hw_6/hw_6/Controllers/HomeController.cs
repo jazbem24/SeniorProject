@@ -103,9 +103,10 @@ namespace hw_6.Controllers
         [HttpGet]
         public ActionResult Reviews(int? id)
         {
-            int pid = id ?? -1;
+            int pid = id ?? -1; //initialized to -1 since it isn't a valid id 
             if (pid == -1) // id was not indicated
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+
 
             var product = db.Products.Find(pid);
 
