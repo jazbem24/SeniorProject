@@ -20,7 +20,7 @@ All code can be seen here in a separate repository:
 
 5.[Homework 5](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/): MVC app with Database
 
-6.[Homework 6](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/)MVC Code First with Existing Database 
+6.[Homework 6](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/): MVC Code First with Existing Database 
 
 
 
