@@ -18,9 +18,9 @@ All code can be seen here in a separate repository:
 
 4.[Homework 4](https://jazbem24.github.io/SeniorProject/cs460/HW4/): MVC basics(Views and Controllers)
 
-5.[Homework 5](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/): MVC app with Database
+5.[Homework 5](https://jazbem24.github.io/SeniorProject/HW5/): MVC app with Database
 
-6.[Homework 6](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/): MVC Code First with Existing Database 
+6.[Homework 6](https://jazbem24.github.io/SeniorProject/HW6/): MVC Code First with Existing Database 
 
 
 
