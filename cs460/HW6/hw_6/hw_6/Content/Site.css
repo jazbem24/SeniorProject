@@ -8,6 +8,7 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    background-color: palegoldenrod;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -16,12 +17,18 @@
 .dl-horizontal dt {
     white-space: normal;
 }
-.jumbotron{
-    text-align:center;
+.jumbotron {
+    text-align: center;
+    background-image: url(/Ref/biking.jpg);
+    background-size: auto 100%;
 }
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.jumbowords {
+    color: white;
 }
