@@ -14,11 +14,12 @@ All code can be seen here in a separate repository:
 # Software Engineering I (CS 460): Homework 
 1. [Homework 1](https://jazbem24.github.io/SeniorProject/cs460/HW1/) : HTML,CSS,Git,Bootstrap
 2. [Homework 2](https://jazbem24.github.io/SeniorProject/cs460/HW2/): Add in some Javascript and jQuery, use branching in Git
-3. [Homework 3](https://jazbem24.github.io/SeniorProject/cs460/HW3/index.md): Learn C# by translating a Java application into a C# console app
+3. [Homework 3](https://jazbem24.github.io/SeniorProject/cs460/HW3/): Learn C# by translating a Java application into a C# console app
 
 4.[Homework 4](https://jazbem24.github.io/SeniorProject/cs460/HW4/): MVC basics(Views and Controllers)
 
 5.[Homework 5](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW5/index.md): MVC app with Database
 
+6.[Homework 6]:MVC Code First with Existing Database 
 
 
