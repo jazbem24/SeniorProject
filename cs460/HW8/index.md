@@ -48,19 +48,19 @@ namespace hw_8.Models
 
 After bringing in the context, I created a menu in the navigation bar to show all the artists, artworks, and classifications. 
 
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW8/ref/menu.png)
+![Alt Text](/ref/menu.png)
 
 # Step 4: CRUD Functionality For Artist
 
 Later, I added a scaffolded item with views and a controller via Entity Framework to create CRUD (create, read, update, delete) functionality for the Artist. 
 
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW8/ref/crud.png)
+![Alt Text](/ref/crud.png)
 
 # Step 5: Attribute Checking
 
 After creating the CRUD functionality, I added attribute checking the the Artist Edit page to ensure that none of the field were optional. 
 
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW8/ref/required.png)
+![Alt Text](/ref/required.png)
 
 # Step 6: AJAX implementation
 
@@ -96,9 +96,9 @@ $(".genreButton").click(function () {
 });
 
 ```
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW8/ref/ajax.png)
+![Alt Text](/ref/ajax.png)
 
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW8/ref/ajax2.png)
+![Alt Text](/ref/ajax2.png)
 
 
 I also returned the appropriate JSON object in order to make this happen... 
