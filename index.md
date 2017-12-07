@@ -22,7 +22,10 @@ All code can be seen here in a separate repository:
 
 6.[Homework 6](https://jazbem24.github.io/SeniorProject/cs460/HW6/): MVC Code First with Existing Database 
 
+7.[Homework 7](https://jazbem24.github.io/SeniorProject/cs460/HW7/): AJAX Single Page App 
+
+
 8.[Homework 8](https://jazbem24.github.io/SeniorProject/cs460/HW8/): MVC App With DIY Relational Multi-Table Database 
 
-9. [Homework 9](https://jazbem24.github.io/SeniorProject/cs460/HW9/): Deploying to Microsoft Azure
+9.[Homework 9](https://jazbem24.github.io/SeniorProject/cs460/HW9/): Deploying to Microsoft Azure
 
