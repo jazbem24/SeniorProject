@@ -164,19 +164,18 @@ textarea {
 
 ![My helpful screenshot](/assets/homepage.png)
 
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/homepage.png)
+![Alt Text](/assets/homepage.png)
 
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/Components.png)
+![Alt Text](/assets/Components.png)
 
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/Handlebars.png)
+![Alt Text](/assets/Handlebars.png)
 
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/pageDisplay.png)
-
-
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/singleproduct.png)
+![Alt Text](/assets/pageDisplay.png)
 
 
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/writeareview.png)
+![Alt Text](/assets/singleproduct.png)
 
-<img src="{{ site.baseurl }}/assets/img/hp_narrators.png">
 
+![Alt Text](/assets/writeareview.png)
+
+![Alt Text](/assets/reviewMade.png)
