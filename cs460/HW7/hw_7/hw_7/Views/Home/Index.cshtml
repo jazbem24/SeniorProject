@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<center>
+    <h1>Giphy Search</h1>
+
+    <!--Giphy search Bar-->
+    <div class="searchBar">
+        <form method="post">
+            <input class="form-control, text-center" id="textInsert" name="textInsert" type="text" />
+            <input class="btn btn-info" type="button" id="Search" name="Search" value="Search" />
+        </form>
+    </div>
+
+    <!--Area for the giphy results-->
+    <div class="gifRow" id="gifResults"></div>
+</center>
+
+<!--js file-->
+@section scripts
+{
+    <script type="text/javascript" src="~/Scripts/gif.js"></script>
+}
