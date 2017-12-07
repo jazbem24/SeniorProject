@@ -1,5 +1,4 @@
-﻿
-function searching() {
+﻿function searching() {
     $.ajax({
         url: "Gif/Search",
         type: "Get",
@@ -9,11 +8,10 @@ function searching() {
         success: function (data) {
             data.data.forEach(function (item) {
                 {
-                    $('#foo').append(item);
+                    $('#foo').append(`img src = "${item}"`);
 
                 }
             }
-      })
+      });
  
-}
 }

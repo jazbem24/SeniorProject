@@ -33,11 +33,9 @@ namespace hw_7.Controllers
             string str = "http://api.giphy.com/v1/gifs/search?api_key="
                              + key
                              + "&q="
-                             + Request.QueryString["find"]
-                             + "&rating="
-                             + Request.QueryString["rating"];
-
-
+                             + Request.QueryString["find"];
+         
+                       
             //create web request and recieve the data stream from giphy
             WebRequest request = WebRequest.Create(str);
             WebResponse response = request.GetResponse();
