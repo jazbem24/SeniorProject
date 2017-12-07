@@ -56,6 +56,8 @@ After bringing in the context, I created a menu in the navigation bar to show al
 
 Later, I added a scaffolded item with views and a controller via Entity Framework to create CRUD (create, read, update, delete) functionality for the Artist. 
 
+![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW8/ref/crud.png)
+
 # Step 5: Attribute Checking
 
 After creating the CRUD functionality, I added attribute checking the the Artist Edit page to ensure that none of the field were optional. 
