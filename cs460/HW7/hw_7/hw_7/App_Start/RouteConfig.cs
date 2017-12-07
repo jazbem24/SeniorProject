@@ -18,11 +18,11 @@ namespace hw_7
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-
+            //find acts as a query string for the specific search
             routes.MapRoute(
                 name: "MyRoute",
                 url: "{gif}/{action}/{find}",
-                defaults: new { Gif = "Home", action = "Search", hunt = UrlParameter.Optional }
+                defaults: new {controller = "Gif", action = "Search", find = UrlParameter.Optional }
             );
         }
     }
