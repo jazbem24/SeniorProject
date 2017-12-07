@@ -162,7 +162,7 @@ textarea {
 
 # Screenshots of it in action: 
 
-![My helpful screenshot]({{https://jazbem24.github.io/SeniorProject/cs460/HW6/ }} /ref/homepage.png)
+![My helpful screenshot]({{https://jazbem24.github.io/SeniorProject/cs460/HW6/}}/ref/homepage.png)
 
 ![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/homepage.png)
 
