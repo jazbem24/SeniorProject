@@ -50,6 +50,8 @@ namespace hw_8.Models
 
 After bringing in the context, I created a menu in the navigation bar to show all the artists, artworks, and classifications. 
 
+![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW8/ref/menu.png)
+
 # Step 4: CRUD Functionality For Artist
 
 Later, I added a scaffolded item with views and a controller via Entity Framework to create CRUD (create, read, update, delete) functionality for the Artist. 
@@ -58,8 +60,9 @@ Later, I added a scaffolded item with views and a controller via Entity Framewor
 
 After creating the CRUD functionality, I added attribute checking the the Artist Edit page to ensure that none of the field were optional. 
 
-# Step 6: AJAX implementation
+![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW8/ref/required.png)
 
+# Step 6: AJAX implementation
 
 Lastly, I created buttons on the home page for ever genre. Each time one those buttons are clicked, it displays artworks and titles in that genre, sorted by title. I did this by using the AJAX technique in my genre.js file. AJAX stands for Asynchrous JavaScript and XML. 
 
@@ -93,6 +96,10 @@ $(".genreButton").click(function () {
 });
 
 ```
+![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW8/ref/ajax.png)
+
+![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW8/ref/ajax2.png)
+
 
 I also returned the appropriate JSON object in order to make this happen... 
 

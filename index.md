@@ -22,5 +22,5 @@ All code can be seen here in a separate repository:
 
 6.[Homework 6](https://jazbem24.github.io/SeniorProject/cs460/HW6/): MVC Code First with Existing Database 
 
-
+8.[Homework 8](https://jazbem24.github.io/SeniorProject/cs460/HW8/): MVC App With DIY Relational Multi-Table Database 
 
