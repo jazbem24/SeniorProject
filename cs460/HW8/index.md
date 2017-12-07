@@ -1,6 +1,4 @@
-# Homework 8
-
-** MVC App With DIY Relational Multi-Table Database 
+# Homework 8: MVC App With DIY Relational Multi-Table Database 
 
 # Step 1: Domain Model
 
