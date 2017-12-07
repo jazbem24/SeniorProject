@@ -1,0 +1,9 @@
+﻿CREATE TABLE SearchLog
+(
+	ID INT IDENTITY (1,1) NOT NULL,
+	SearchDate DateTime NOT NULL,
+	SearchRequest VARCHAR(MAX) NOT NULL,
+	Agent VARCHAR(MAX) NOT NULL,
+	IPAddress VARCHAR(128),
+	CONSTRAINT [PK_SearchLog] PRIMARY KEY (ID)
+);
