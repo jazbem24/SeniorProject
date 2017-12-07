@@ -162,6 +162,8 @@ textarea {
 
 # Screenshots of it in action: 
 
+![My helpful screenshot]({{ "/ref/homepage.png" |https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/homepage.png }})
+
 ![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/homepage.png)
 
 ![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/Components.png)
@@ -176,5 +178,5 @@ textarea {
 
 ![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/writeareview.png)
 
-![Alt Text](https://github.com/jazbem24/SeniorProject/blob/master/cs460/HW6/ref/reviewMade.png)
+<img src="{{ site.baseurl }}/assets/img/hp_narrators.png">
 
